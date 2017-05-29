@@ -10,13 +10,13 @@
 * [Database](database-management/database.md)
 * [Table](database-management/table.md)
 * [Column](database-management/column.md)
-  * [Constraints](database-management/column/attribute.md)
+* [Constraints](database-management/constraints.md)
 * [Index](database-management/index.md)
 * [View](database-management/view.md)
 
 ## Syntax
 
-* SELECT
+* [SELECT](syntax/select.md)
 
 ## Function
 

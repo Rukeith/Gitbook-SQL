@@ -1,4 +1,4 @@
-# Data Type 資料型態
+# Data Type 資料型態 {#data-type}
 
 ---
 
