@@ -27,6 +27,7 @@
 * [HAVING](syntax/having.md)
 * [EXISTS](syntax/exists.md)
 * [ANY & ALL](syntax/any-and-all.md)
+* [UNION](syntax/union.md)
 
 ## Function
 
@@ -43,5 +44,8 @@
 
 * [JOINS](join/joins.md)
 * [Inner Join](join/inner-join.md)
-* Outer Join
+* [Lift Join](join/lift-join.md)
+* [Right Join](join/right-join.md)
+* [Outer Join](join/outer-join.md)
+* [Self Join](join/self-join.md)
 
