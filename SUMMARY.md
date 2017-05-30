@@ -16,7 +16,16 @@
 
 ## Syntax
 
+* [Syntax](syntax/syntax.md)
+* [COMMENTS](syntax/comments.md)
 * [SELECT](syntax/select.md)
+* [LIMIT & SELECT TOP](syntax/limit-and-select-top.md)
+* [WHERE](syntax/where.md)
+* [ORDER BY](syntax/order-by.md)
+* [GROUP BY](syntax/group-by.md)
+* [AS](syntax/as.md)
+* LIKE
+* EXISTS
 
 ## Function
 
@@ -24,6 +33,7 @@
 
 ## Join
 
+* JOINS
 * Inner Join
 * Outer Join
 

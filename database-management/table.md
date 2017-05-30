@@ -54,7 +54,7 @@ ALTER TABLE Customer MODIFY Addr char(30);
 
 ## TRUNCATE 清空資料表
 
-此指令與 Drop 不同的地方在於，只會清空資料，結構都還是保留著
+此指令與 `DROP` 不同的地方在於，只會清空資料，結構都還是保留著
 
 ```
 TRUNCATE TABLE tablename;

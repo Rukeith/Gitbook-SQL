@@ -30,7 +30,11 @@ First_Name varchar(30));
 
 ## PRIMARY KEY 主鍵
 
-包含了 NOT NULL 和 UNIQUE 的特性。每個資料表只能有一個 Primary key，可以是原本資料中的一個欄位，或是多個欄位組合出來的（稱為 Composite Key）。
+包含了 `NOT NULL` 和 `UNIQUE` 的特性。每個資料表只能有一個 Primary key，可以是原本資料中的一個欄位，或是多個欄位組合出來的（稱為 Composite Key）。
+
+* 用於識別資料表中的單獨的一行、確保了唯一性
+* 用於跟另外的資料表作關聯
+* 一般會自動預設建立索引，提高搜尋速度
 
 ```
 CREATE TABLE Persons (
@@ -44,7 +48,7 @@ CREATE TABLE Persons (
 
 ## FOREIGN KEY 外來鍵
 
-由一個\(或數個\)指向另外一個資料表 Primary key 的欄位。
+由一個\(或數個\)指向另外一個資料表 Primary key 的欄位。 A 資料表中的某個字段，同時也是 B 資料表中的 Primary key。這個字段就是 A 資料表的 Foreign key。
 
 ```
 CREATE TABLE Orders (
