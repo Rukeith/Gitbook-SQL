@@ -34,14 +34,14 @@
 * [MAX & MIN](function/max-and-min.md)
 * [AVG & COUNT & SUM](function/avg-and-count-and-sum.md)
 * [Concatenate](function/concatenate.md)
-* Substring
+* [Substring](function/substring.md)
 * Trim
 * Length
 * Replace
 
 ## Join
 
-* JOINS
-* Inner Join
+* [JOINS](join/joins.md)
+* [Inner Join](join/inner-join.md)
 * Outer Join
 

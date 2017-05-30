@@ -8,5 +8,12 @@
 * Oracle：`CONCAT()`, `||`。Orcale 的 `CONCAT()` 一次只能串連一個字串，使用 `||` 才能一次串連多個。
 * SQL Server：`+`
 
+這邊我們將會以 MySQL 的為示範
+
+```
+SELECT CONCAT(Region_Name, Store_Name) FROM Geography 
+WHERE Store_Name = 'Boston';
+```
+
 
 
