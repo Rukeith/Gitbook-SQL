@@ -50,6 +50,10 @@ CREATE TABLE Persons (
 
 由一個\(或數個\)指向另外一個資料表 Primary key 的欄位。 A 資料表中的某個字段，同時也是 B 資料表中的 Primary key。這個字段就是 A 資料表的 Foreign key。
 
+* 其相互連結的資料表需要是使用同樣的儲存方式，不能使用 View。且資料表的儲存只能使用 InnoDB。
+* 兩個欄位的資料型態需要是一樣的，長度可以不同。
+* 需要建立 Index，如果沒有建立會自動建立。
+
 ```
 CREATE TABLE Orders (
     OrderID int NOT NULL PRIMARY KEY,

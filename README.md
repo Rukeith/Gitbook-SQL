@@ -18,8 +18,6 @@
 4. Function
 5. Join
 
-
-
 ### 參考資料
 
 [https://zhuanlan.zhihu.com/p/25203710](https://zhuanlan.zhihu.com/p/25203710)
@@ -33,4 +31,8 @@
 [https://www.w3schools.com/sql/default.asp](https://www.w3schools.com/sql/default.asp)
 
 [http://www.1keydata.com/tw/sql/sql.html](http://www.1keydata.com/tw/sql/sql.html)
+
+[http://chars.tech/2017/05/19/mysql-sql-study/](http://chars.tech/2017/05/19/mysql-sql-study/)
+
+http://chars.tech/2017/05/29/mysql-advanced-study/
 
