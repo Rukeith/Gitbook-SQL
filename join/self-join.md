@@ -2,7 +2,7 @@
 
 ---
 
-A self JOIN is a regular join, but the table is joined with itself.
+`Self Join` 是一般的 Join 方式，只是它是自己對自己 Join。有點類似 Subquery。
 
 資料：
 
