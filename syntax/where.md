@@ -51,5 +51,15 @@ SELECT * FROM Products
 WHERE Price NOT BETWEEN 10 AND 20;
 ```
 
+## Subquery
+
+我們也可以在  WHERE 裡面再多加一層的 Query。只需要用括弧刮起來。
+
+```
+SELECT title, rental_rate
+FROM film
+WHERE rental_rate > (SELECT AVG(rental_rate) FROM film);
+```
+
 
 
