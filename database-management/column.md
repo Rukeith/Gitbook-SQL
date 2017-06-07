@@ -5,13 +5,30 @@
 ## INSERT INTO 新增資料
 
 ```
+-- 需要指定插入的欄位
 INSERT INTO Store_Information (Store_Name, Sales, Txn_Date)
 VALUES ('Los Angeles', 900, 'Jan-10-1999');
+
+-- 一次插入多筆資料
+INSERT INTO students(full_name,gender,age)
+VALUES
+('德莱厄斯','男','25'),
+('寡妇收割者','女',22),
+('光辉女神','女',18),
+('赵信','男',21),
+('曙光女神','女','22');
+```
+
+如果沒有指定插入資料的欄位，則會需要填入所有的資料
+
+```
+INSERT INTO students
+VALUES (20170001,'盖伦','男','24');
 ```
 
 ### INSERT INTO SELECT
 
-從一個資料表複製資料到另一個資料表，需要欄位的資料類型一致才行。對於已存在的資料將不受影響。此功能跟 `SELECT INTO` 很像，詳細內容在 `SELECT` 篇章介紹。
+從一個資料表複製資料到另一個資料表，需要欄位的資料類型一致才行。對於已存在的資料將不受影響。此功能跟 `SELECT INTO` 很像，詳細內容在 `SELECT` 篇章介紹。簡單說這樣的寫法會插入搜尋出來的資料。
 
 ```
 INSERT INTO Customers (CustomerName, City, Country)

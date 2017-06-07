@@ -30,7 +30,7 @@ First_Name varchar(30));
 
 ## PRIMARY KEY 主鍵
 
-包含了 `NOT NULL` 和 `UNIQUE` 的特性。每個資料表只能有一個 Primary key，可以是原本資料中的一個欄位，或是多個欄位組合出來的（稱為 Composite Key）。
+包含了 `NOT NULL` 和 `UNIQUE` 的特性。每個資料表只能有一個 Primary key，可以是原本資料中的一個欄位，或是多個欄位組合出來的（稱為 Composite Key），不能更改。
 
 * 用於識別資料表中的單獨的一行、確保了唯一性
 * 用於跟另外的資料表作關聯
@@ -113,6 +113,23 @@ ALTER COLUMN City SET DEFAULT 'Sandnes';
 ```
 ALTER TABLE Persons
 ALTER COLUMN City DROP DEFAULT;
+```
+
+### DEFAULT CHARACTER SET
+
+用於設定資料庫的 Table 使用的字符集，如無設定就使用預設值。
+
+```SQL
+
+CREATE TABLE students_list(
+    id         INT          NOT NULL  AUTO_INCREMENT,
+    full_name  VARCHAR(10)  NOT NULL,
+    gender     VARCHAR(10)  NULL,
+    age        INT          NOT NULL  DEFAULT 20,
+    PRIMARY KEY(id)
+) ENGINE=InnoDB AUTO_INCREMENT=20170001 DEFAULT CHARACTER SET utf8;
+-- 根據上面的設定，primary key 預設由 20170001 開始增加
+--  其中 ENGINE 是設定使用的資料庫引擎
 ```
 
 ## AUTO\_INCREMENT 自動增量

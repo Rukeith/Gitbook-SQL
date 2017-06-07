@@ -2,11 +2,13 @@
 
 ---
 
-在使用 WHERE 時，我們還能使用 LIKE 在做查找。LIKE 可以讓我們使用 pattern 的方式來找尋我們要的資料LIKE 使用兩個 wildcards 來組合條件。
+在使用 WHERE 時，我們還能使用 LIKE 在做查找。LIKE 可以讓我們使用 pattern 的方式來找尋我們要的資料LIKE 使用兩個 wildcards 來組合條件。一般是不分大小寫的，如果在後面加上 `BINARY` 則會區分大小寫：`LIKE BINARY '%J%S%'`
 
 1. `%`：代表零個、一個、或數個字母。
 
 2. `_`：代表剛好一個字母。
+
+3. `[]`：代表一個字串集，需要符合其中的任意一個字串。
 
 範例：
 
@@ -20,6 +22,13 @@
 SELECT * 
 FROM Store_Information 
 WHERE store_name LIKE '%AN%';
+```
+
+
+
+```
+SELECT * FROM students
+WHERE full_name LIKE '[Man][Woman]God';
 ```
 
 

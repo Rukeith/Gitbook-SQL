@@ -4,7 +4,7 @@
 
 在 SQL 中，我們可以加上註解以增加可讀性。
 
-單一註解：
+## 單一註解：
 
 ```
 --Select all:
@@ -18,7 +18,7 @@ or
 SELECT * FROM Customers;
 ```
 
-多行註解：
+## 多行註解：
 
 ```
 SELECT * FROM Customers WHERE (CustomerName LIKE 'L%'
