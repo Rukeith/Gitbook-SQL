@@ -19,7 +19,7 @@ CREATE TABLE Persons (
 
 ## UNIQUE 唯一值
 
-用來確保該欄位的資料都是不一樣的
+用來確保該欄位的資料都是不一樣的，SQL 標準上會把 NULL 當作唯一值，所以該列只能有一個 NULL。但是 PostgreSQL，則沒有這個限制。
 
 ```
 CREATE TABLE Customer 
@@ -42,7 +42,7 @@ CREATE TABLE Persons (
     LastName varchar(255) NOT NULL,
     FirstName varchar(255),
     Age int,
-    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+    CONSTRAINT PK_Person PRIMARY KEY (ID, LastName)
 );
 ```
 
@@ -120,7 +120,6 @@ ALTER COLUMN City DROP DEFAULT;
 用於設定資料庫的 Table 使用的字符集，如無設定就使用預設值。
 
 ```SQL
-
 CREATE TABLE students_list(
     id         INT          NOT NULL  AUTO_INCREMENT,
     full_name  VARCHAR(10)  NOT NULL,
