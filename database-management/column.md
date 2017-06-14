@@ -38,7 +38,7 @@ WHERE Country='Germany';
 
 ## UPDATE 更新資料
 
-這裡要注意的是，如果沒有 `WHERE` 條件，則全部的資料都會被更新。
+這裡要注意的是，如果沒有 `WHERE` 條件，則所有資料的該欄位都會被更新。
 
 ```
 UPDATE Store_Information
@@ -47,7 +47,16 @@ WHERE Store_Name = 'Los Angeles'
 AND Txn_Date = 'Jan-08-1999';
 ```
 
+下面指令則可以把 name 欄位的資料都寫到 description 欄位
+
+```
+UPDATE link
+SET description = name;
+```
+
 ## DELETE 刪除資料
+
+DELETE 會回傳被刪除資料的數量。
 
 以下會刪除所有 `Store_Name` 是 Los Angeles 的資料
 

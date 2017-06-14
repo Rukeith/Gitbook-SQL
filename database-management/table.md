@@ -1,4 +1,4 @@
-# Table
+Table
 
 ---
 
@@ -24,6 +24,12 @@ CREATE TABLE suppliers
       FROM companies, categories
       WHERE companies.id = categories.id
       AND companies.id > 1000);
+```
+
+複製別的資料表的欄位來建立
+
+```
+CREATE TABLE new_table LIKE (old_table);
 ```
 
 ## ALTER 修改資料表結構
@@ -78,6 +84,12 @@ TRUNCATE TABLE tablename;
 
 ```
 DROP TABLE tablename;
+```
+
+當要刪除的資料表有索引跟其他的資料表做關聯時，可以加上 CASCADE。包含這些外部索引鍵的所有資料列也會被刪除。
+
+```
+DROP TABLE tablename CASCADE;
 ```
 
 
