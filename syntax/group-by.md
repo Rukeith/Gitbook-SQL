@@ -29,5 +29,17 @@ GROUP BY Store_Name;
 | San Diego | 250 |
 | Boston | 700 |
 
+如果 GROUP BY 使用多個欄位的話，會先以第一個為主，再去排序第二個。
+
+```
+SELECT rating, rental_rate, count(film_id)
+FROM film
+GROUP BY rating, rental_rate;
+```
+
+可以看到下面的結果，會先排序  rating 欄位之後，才依照 rental\_rate 排序。
+
+![](/assets/Screen Shot 2017-06-20 at 14.18.00.png)
+
 
 
