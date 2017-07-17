@@ -17,6 +17,37 @@ or
 CREATE UNIQUE INDEX index_name ON table_name (column_name);
 ```
 
+### 主鍵索引
+
+```
+ALTER TABLE 'table_name' ADD PRIMARY KEY 'index_name' ('column);
+```
+
+### 唯一索引
+
+```
+ALTER TABLE 'table_name' ADD UNIQUE 'index_name' ('column);
+```
+
+### 普通索引
+
+```
+ALTER TABLE 'table_name' ADD INDEX 'index_name' ('column');
+```
+
+### 全文索引
+
+```
+ALTER TABLE 'table_name' ADD FULLTEXT 'index_name' ('column');
+3.5
+```
+
+### 組合索引
+
+```SQL
+ALTER TABLE 'table_name' ADD INDEX 'index_name' ('column1', 'column2', ...);
+```
+
 ## DROP INDEX 刪除索引
 
 因為索引一定會儲存於一個資料表中，所以如果把資料表刪除，索引也會跟著刪除掉。
