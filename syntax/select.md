@@ -16,6 +16,10 @@ SELECT * FROM Customers;
 SELECT CustomerName, City FROM Customers;
 ```
 
+## FROM
+這邊特別提一下 `FROM`。`FROM` 輸出的是聯合的資料表，例如 `FROM a, b`，如果 a 有 3 個欄位、b 有 5 個欄位。則輸出的會是 8 個欄位的資料表。
+
+
 ## DISTINCT
 
 有時候我們不需要重複的資料，則我們可以加上 DISTINCT 來排重
@@ -49,6 +53,3 @@ SELECT DISTINCT Store_Name FROM Store_Information;
 SELECT CustomerName, ContactName INTO CustomersBackup2017
 FROM Customers;
 ```
-
-
-

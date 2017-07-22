@@ -1,6 +1,25 @@
 # Syntax
 
 ---
+SQL 是一種宣告式的語言，不同於一般常見的程式語言可以一行一行的指定執行順序。SQL 的執行順序如下：
+
+* FROM
+* WHERE
+* GROUP BY
+* HAVING
+* SELECT
+* DISTINCT
+* UNION
+* ORDER BY
+
+所以不能在 WHERE 中使用 SELECT 定義的別名，因為 WHERE 會先執行。
+
+```
+SELECT A.x + A.y AS z
+FROM A
+WHERE z = 10 -- z 不能使用
+```
+
 
 SQL 的指令大致可以分為四種：DDL / DML / DCL / TCL。
 
@@ -49,6 +68,3 @@ SQL 的指令大致可以分為四種：DDL / DML / DCL / TCL。
 * SAVEPOINT - identify a point in a transaction to which you can later roll back
 * ROLLBACK - restore database to original since the last COMMIT
 * SET TRANSACTION - Change transaction options like isolation level and what rollback segment to use
-
-
-
